@@ -42,16 +42,6 @@ The wheels’ rotations were used to calculate the distance traveled. The Shield
 
 A key challenge was wobbling due to uneven wheel speeds. To fix this, the tick rate of each wheel was monitored, and the ShieldBot was adjusted to move straight by compensating for differences in tick counts.
 
-## Arduino Coding
-
-The ShieldBot was programmed using the Arduino IDE. The following sections explain key code snippets:
-
-- **Turning Left/Right (Code I)**: `shieldbot.drive(127,-128)` for turning left and `shieldbot.drive(-128,127)` for turning right.
-- **Moving Straight (Code II)**: Stabilizing movement by monitoring tick counts.
-- **High/Low Value Reading (Code III)**: Using `analogRead()` to get sensor values.
-- **Traveling 1 Meter (Code IV)**: Counting ticks to ensure precise 1-meter travel.
-- **Final Code (Code V)**: Combined code for executing all tasks.
-
 ## Testing
 
 ### Key Tests
